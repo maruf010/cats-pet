@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cats Pet</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- sora Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- ADLaM Display font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/2e96046ddf.js" crossorigin="anonymous"></script>
+    <style>
+        .sora-font{
+            font-family: "Sora", serif;
+        }
+        .adlam-font{
+            font-family: "ADLaM Display", serif;
+        }
+
+    </style>
 </head>
 <body>
-    
+ <header class=" max-w-7xl mx-auto  border md:mb-10 py-5">
+    <nav><img src="./c1-assets/logo-header.png" alt=""></nav>
+ </header>
+ <!-- banner section -->
+ <section class="max-w-7xl mx-auto">
+    <!-- container -->
+    <div class=" md:flex items-center mx-5 lg:mx-0 border">
+        <!-- content -->
+        <div class=" relative z-10 md:w-1/2 space-y-5 pt-5 ">
+            <h2 class="text-6xl adlam-font">Pamper Your Pet, Because They Deserve the Bes</h2>
+            <p class="text-[#111111] text-xl sora-font">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="bg-[#FFDC26] px-5 py-2 rounded-lg">Find a pet</button>
+        </div>
+
+        <div class="absolute -mt-28 md:mt-96">
+            <img class="w-[100%] lg:w-full " src="./c1-assets/cat-big.png" alt="">
+        </div>
+    </div>
+ </section>
 </body>
 </html>
