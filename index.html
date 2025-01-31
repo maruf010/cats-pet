@@ -32,22 +32,71 @@
     </style>
 </head>
 <body>
- <header class=" max-w-7xl mx-auto  md:mb-10 py-5">
-    <nav><img src="./c1-assets/logo-header.png" alt=""></nav>
+ <header class="bg-[#FFF9F4] border lg:border-none">
+    <nav class="max-w-7xl mx-auto py-4 lg:py-5">
+        <!-- Desktop -->
+        <div class="lg:flex justify-between hidden lg:visible">
+            <div class="flex items-center text-2xl sora-font">
+                <img src="./c1-assets/logo-header.png" alt="">
+                <h2 class="ml-3">Browse<span class="text-[#FFDC26]">4</span>Pets</h2>
+            </div>
+            <ul class="flex items-center text-xl gap-5 sora-font ">
+                <li><a class="hover:text-[#FFDC26] duration-300" href="">Find a pet</a></li>
+                <li><a class="hover:text-[#FFDC26] duration-300" href="">Breeds</a></li>
+                <li><a class="hover:text-[#FFDC26] duration-300" href="">Contact us</a></li>
+            </ul>
+            <div class="">
+                <i class="fa-regular fa-bell text-xl mr-2"></i>
+                <i class="fa-solid fa-magnifying-glass text-xl mr-4 "></i>
+                <button class="border border-[#FFDC26] hover:bg-gradient-to-tr from-[#FFDC26] to-white px-7 py-2 rounded-lg text-xl sora-font">Login</button>
+                <button class="bg-gradient-to-tr from-[#FFDC26] via-yellow-200 to-white  px-5 py-2 rounded-lg text-xl sora-font ml-2 hover:bg-gradient-to-br from-[#FFDC26] to-white border-[#FFDC26] border duration-500">Register</button>
+            </div>
+        </div>
+        <!-- Mobile -->
+         <div class="flex items-center justify-between lg:hidden mx-5">
+            <img src="./c1-assets/logo-header.png" alt="">
+            <div >
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box  mt-2 -ml-16 shadow  justify-start bg-[#ffdb26be]">
+                    <li class="bg-white"><a>Search <i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li><a>Find a pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li class="bg-white"><a>Contact us</a></li>
+                    <li><a>Login</a></li>
+                    <li><a>Register</a></li>
+                </ul>
+                </div>
+              </div>
+         </div>
+    </nav>
  </header>
  <!-- banner section -->
- <section class="max-w-7xl mx-auto">
+ <section class="max-w-7xl mx-auto py-2 md:py-20">
     <!-- container -->
     <div class=" md:flex items-center mx-5 lg:mx-0 ">
         <!-- content -->
         <div class=" relative z-10 md:w-1/2 space-y-5 pt-5 ">
             <h2 class="text-5xl md:text-6xl adlam-font">Pamper Your Pet, Because They Deserve the Bes</h2>
             <p class="text-[#111111] text-xl sora-font">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-            <button class="bg-[#FFDC26] px-5 py-2 rounded-lg text-xl sora-font">Find a pet</button>
+            <button class="bg-[#FFDC26] border border-[#FFDC26] px-5 py-2 rounded-lg text-xl sora-font hover:bg-white duration-300">Find a pet</button>
         </div>
 
         <div class="absolute -mt-28 md:mt-[350px]">
-            <img class="w-[100%] lg:w-full " src="./c1-assets/cat-big.png" alt="">
+            <img class="w-[100%] lg:w-full relative " src="./c1-assets/cat-big.png" alt="">
         </div>
     </div>
  </section>
@@ -57,7 +106,7 @@
     <!-- card container -->
      <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mx-5 lg:mx-0">
         <!-- cards 1 -->
-        <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center">
+        <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center hover:scale-75 transition duration-300 cursor-pointer">
             <div class=" ">
                 <img class="p-5 mx-auto bg-white rounded-full" src="./c1-assets/dog-cartoon.png" alt="">
             </div>
@@ -65,7 +114,7 @@
                 <p class="sora-font">3 items</p>
          </div>
          <!-- card 2 -->
-         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center">
+         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center hover:scale-75 transition duration-300 cursor-pointer">
             <div class=" ">
                 <img class="p-5 mx-auto bg-white rounded-full" src="./c1-assets/fish-cartoon.png" alt="">
             </div>
@@ -73,7 +122,7 @@
                 <p class="sora-font">5 items</p>
          </div>
 
-         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center">
+         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center hover:scale-75 transition duration-300 cursor-pointer">
             <div class=" ">
                 <img class="p-5 mx-auto bg-white rounded-full" src="./c1-assets/cat-cartoon.png" alt="">
             </div>
@@ -81,7 +130,7 @@
                 <p class="sora-font">3 items</p>
          </div>
 
-         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center">
+         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center hover:scale-75 transition duration-300 cursor-pointer">
             <div class=" ">
                 <img class="p-5 mx-auto bg-white rounded-full" src="./c1-assets/bird-cartoon.png" alt="">
             </div>
@@ -89,7 +138,7 @@
                 <p class="sora-font">3 items</p>
          </div>
 
-         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center">
+         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center hover:scale-75 transition duration-300 cursor-pointer">
             <div class=" ">
                 <img class="p-5 mx-auto bg-white rounded-full" src="./c1-assets/mouse-cartoon.png" alt="">
             </div>
@@ -97,7 +146,7 @@
                 <p class="sora-font">3 items</p>
          </div>
 
-         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center">
+         <div class="bg-[#F9DF8A] rounded-xl py-12 space-y-4 text-center hover:scale-75 transition duration-300 cursor-pointer">
             <div class=" ">
                 <img class="p-5 mx-auto bg-white rounded-full" src="./c1-assets/rabbit-cartoon.png" alt="">
             </div>
@@ -113,13 +162,13 @@
     <div class="max-w-7xl mx-auto lg:py-24">
         <h2 class="text-3xl adlam-font mb-10 ml-5 lg:ml-0 mt-12 pt-5 lg:pt-0">Trending Pet Products</h2>
     <!-- container -->
-     <div class="lg:flex">
+     <div class="lg:flex py-5">
         <!-- big card -->
         <div class="bg-[#F9DF8A] rounded-xl flex  relative pl-6 mx-5">
             <div class="space-y-5 pt-12">
                 <h2 class="text-3xl adlam-font">T- Shirt For Dogs</h2>
                 <p class="sora-font">Discover a world of treats, <br> toys, and essentials handpicked for </p>
-                <button class="bg-white text-xl py-2 px-6 rounded-lg sora-font">Shop Now</button>
+                <button class="bg-white text-xl py-2 px-6 rounded-lg sora-font hover:bg-black hover:text-white duration-300">Shop Now</button>
             </div>
 
             <div class="-ml-24 mt-20">
@@ -232,9 +281,9 @@
      </div>
     </div>
   </section>
-  <!-- pet price section -->
+  <!-- Low price section -->
    <section class="max-w-7xl mx-auto lg:py-24">
-    <h2 class="text-3xl adlam-font mb-10 ml-5 lg:ml-0 mt-12 pt-5 lg:pt-0">Trending Pet Products</h2>
+    <h2 class="text-3xl adlam-font mb-10 ml-5 lg:ml-0 mt-12 pt-5 lg:pt-0">Everyday Low Price</h2>
     <!-- container -->
      <div class="lg:flex gap-4">
         <!-- card big 1 -->
@@ -261,10 +310,93 @@
          </div>
      </div>
    </section>
+   <!-- Extra Section -->
+    <section class="max-w-7xl mx-auto lg:py-24">
+        <h2 class="adlam-font text-3xl  mb-14 ml-5 lg:ml-0 mt-16 lg:mt-12 lg:pt-0">Upcoming Cats</h2>
+        <!-- container -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-5  mx-auto">
+            <!-- review card 1 -->
+            <div class="card bg-base-100  shadow-xl mx-5 md:mx-0">
+                <figure>
+                  <img class="w-full"
+                    src="./c1-assets/card1.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Highlander!
+                    <div class="badge badge-secondary uppercase">coming soon</div>
+                  </h2>
+                  <p>Color:  Various cat colors, including solid points, lynx points, and spotted patterns.</p>
+                  <div class="card-actions justify-end">
+                    <div class="badge badge-outline border-[#FFDC26] bg-[#FFDC26] p-3">Pre-order</div>
+                    <div class="badge badge-outline uppercase text-[#FFDC26] p-3">see more</div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="card bg-base-100  shadow-xl mx-5 md:mx-0">
+                <figure>
+                  <img class="w-full"
+                    src="./c1-assets/card2.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">
+                    American Curl!
+                    <div class="badge badge-secondary">VERY SOON</div>
+                  </h2>
+                  <p>Color: White, black, blue, silver, red, lilac, chocolate, golden, cream, tortoiseshell.</p>
+                  <div class="card-actions justify-end">
+                    <div class="badge badge-outline border-[#FFDC26] bg-[#FFDC26] p-3">Pre-order</div>
+                    <div class="badge badge-outline uppercase text-[#FFDC26] p-3">see more</div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 3 -->
+              <div class="card bg-base-100  shadow-xl mx-5 md:mx-0">
+                <figure>
+                  <img class="w-full"
+                    src="./c1-assets/card3.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Napoleon Cat!
+                    <div class="badge badge-secondary uppercase">Pre-Order</div>
+                  </h2>
+                  <p>Temperament: Loving, social, playful, easy-going, gentle, active, energetic. Color: All cat colors and patterns.</p>
+                  <div class="card-actions justify-end">
+                    <div class="badge badge-outline border-[#FFDC26] bg-[#FFDC26] p-3">Pre-order</div>
+                    <div class="badge badge-outline uppercase text-[#FFDC26] p-3">see more</div>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4 -->
+              <div class="card bg-base-100  shadow-xl mx-5 md:mx-0">
+                <figure>
+                  <img
+                    src="./c1-assets/card4.jpg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">
+                    Toyger!
+                    <div class="badge badge-secondary">JUNE / 2025 </div>
+                  </h2>
+                  <p>Temperament: Affectionate, loving,social,trainable, intelligent. Color: Orange or tan with dark vertical stripes.</p>
+                  <div class="card-actions justify-end mt-3">
+                    <div class="badge badge-outline border-[#FFDC26] bg-[#FFDC26] p-3">Pre-order</div>
+                    <div class="badge badge-outline uppercase text-[#FFDC26] p-3">see more</div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
    <!-- upper footer -->
     <div class="mx-5 lg:mx-0">
         <div class="  max-w-7xl mx-auto bg-[#FFF9F4]
-     rounded-2xl mt-20 relative -mb-52 mx-5">
+     rounded-2xl mt-20 relative -mb-60 ">
         <!-- container -->
         <div class="md:flex items-center mx-5 md:mx-0 py-10">
             <!-- pic -->
@@ -273,7 +405,7 @@
                 <h2 class="text-4xl adlam-font mb-5">Get Pawsome News!</h2>
                 <p class="text-xl sora-font mb-9">Exclusive training tips, ticks, product deals and more.</p>
                 <input type="email" required placeholder="Enter email...." class="input  w-full " />
-                <button class="bg-[#FFDC26] px-5 py-2 rounded-lg text-xl sora-font mt-9 " type="submit">Subscribe</button>
+                <button class="bg-[#FFDC26] px-5 py-2 rounded-lg text-xl sora-font mt-9 hover:bg-white border border-[#FFDC26] duration-300 hover:text-[#FFDC26]"  type="submit">Subscribe</button>
              </div>
         </div>
     </div>
